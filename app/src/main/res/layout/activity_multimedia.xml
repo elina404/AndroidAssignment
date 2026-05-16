@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter 7: Sensors &amp; Multimedia"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sensor Section -->
+        <TextView
+            android:id="@+id/sensorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer: X=0, Y=0, Z=0"
+            android:padding="8dp"
+            android:background="#E8F5E9"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Location Section -->
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Current Location (GPS)"/>
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location: Not fetched"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnShowOnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show on Google Maps"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Camera Section -->
+        <Button
+            android:id="@+id/btnCaptureImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Image (Camera)"/>
+
+        <ImageView
+            android:id="@+id/capturedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:background="#EEEEEE"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Media Section -->
+        <Button
+            android:id="@+id/btnPlayAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Audio Sample"/>
+
+    </LinearLayout>
+</ScrollView>

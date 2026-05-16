@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter 4: Data Storage"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- SharedPreferences Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. SharedPreferences"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/prefEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text for SharedPreferences"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+            <Button
+                android:id="@+id/btnSavePref"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"/>
+            <Button
+                android:id="@+id/btnLoadPref"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Load"/>
+        </LinearLayout>
+
+        <!-- Internal Storage Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Internal Storage (Files)"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/fileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text to save in file"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+            <Button
+                android:id="@+id/btnWriteFile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Write File"/>
+            <Button
+                android:id="@+id/btnReadFile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Read File"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/displayDataTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result will appear here"
+            android:padding="8dp"
+            android:background="#EEEEEE"
+            android:minHeight="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

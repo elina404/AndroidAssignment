@@ -61,4 +61,14 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         db.delete(TABLE_NOTES, null, null)
         db.close()
     }
+
+    // UPDATE (Chapter 4 Task 3 Complete CRUD)
+    fun updateNote(oldContent: String, newContent: String): Int {
+        val db = this.writableDatabase
+        val values = ContentValues()
+        values.put(KEY_CONTENT, newContent)
+        val result = db.update(TABLE_NOTES, values, "$KEY_CONTENT=?", arrayOf(oldContent))
+        db.close()
+        return result
+    }
 }

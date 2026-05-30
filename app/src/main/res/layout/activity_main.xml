@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Assignment App"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Chapter 2 & 3: Navigation with Data -->
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter message for Detail Screen"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToDetailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Activity Lifecycle &amp; Navigation"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Other Chapters -->
+        <Button
+            android:id="@+id/navigateToLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Login Form (Validation)"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Profile (ConstraintLayout)"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToStorageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Data Storage (Prefs &amp; Files)"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToNotesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Notes App (SQLite CRUD)"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToNetworkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Networking (API &amp; JSON)"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToRecyclerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. RecyclerView &amp; ViewModel"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToFragmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. Fragments"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/navigateToMultimediaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. Sensors &amp; Multimedia"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

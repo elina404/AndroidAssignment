@@ -1,4 +1,5 @@
 # Mobile Computing - Assignment Report
+**Student Name:** Elina Rai
 
 ## Chapter 1: Mobile Computing Fundamentals
 
